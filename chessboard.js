@@ -1,4 +1,4 @@
-var height = 0;
+/*var height = 0;
 var maxHeight = 8;
 var width = 0;
 var maxWidth = 8;
@@ -33,4 +33,33 @@ while(height < maxHeight){
     line = " ";
     width = 0;
     height += 1;
+}*/
+
+var a = " #";
+var b = "# ";
+var size = 8;
+var sw = true;
+var line = "";
+
+for(var i = 0; i < size; i++){
+    if(sw){
+        while(line.length < size){
+            line = line + a
+        }
+    }
+    else{
+        while(line.length<size){
+            line = line + b
+        }
+    }
+    console.log(line);
+    line="";
+    if(sw){
+        sw = false;
+    }
+    else{
+        sw = true;
+    }
 }
+
+
